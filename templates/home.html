@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title of HTML page</title>
+</head>
+<body>
+    <h1 style="border:3px dotted green;">Heading one</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur dolorem ex ipsum, iusto laboriosam modi mollitia natus non perspiciatis, placeat rem soluta temporibus voluptas voluptatem. Doloremque quas reprehenderit vel.</p>
+
+    <form action="{% url 'count' %}">
+        <textarea cols="150" rows="10" name="fulltext"> </textarea><br>
+        <input type="submit" value="Count you text" />
+
+    </form>
+<a href="{% url 'about' %}"><input type="submit" value="Click here for about page"></a>
+</body>
+</html>
